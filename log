@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .mainBody{
+            height: 100vh;
+            width: 100vw;
+            background:url(/dashboard/Simple\ Dark\ Fashion\ Bio-Link\ Website\ Black\ and\ White\ in\ Modern\ Style\ \(1\).png) rgba(95, 94, 94, 0.5);
+            background-blend-mode:darken;
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+            align-items: center;
+            justify-items: center;
+            background-repeat:no-repeat;
+            background-size: cover;
+
+        }
+        .body h2{
+            color: rgb(17, 17, 17);
+        }
+        .body{
+            background-color: white;
+            width: 80%;
+            padding: 30px 10px;
+            border-radius: 10px;
+            
+            @media (width < 40em) {
+                margin-top: 50px;
+            }
+            @media (width < 60em) {
+               margin-top: 50px; 
+            }
+
+
+        }
+        svg{
+            cursor: pointer;
+        }
+        button{
+            cursor: pointer;
+        }
+        .head{
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+        }
+        .sociallinks{
+            margin-top: -70px;
+            display: flex;
+            gap: 10px;
+        }
+        .footerSocialLinks{
+            display: flex;
+            gap: 10px;
+        }
+        .footerSocialLinks svg{
+            background-color: rgb(255, 187, 0);
+            border-radius: 50%;
+            padding: 10px 5px;
+            width: 20px;
+            height: 20px;
+            object-fit: contain;
+        }
+        .sociallinks svg{
+            background-color: rgb(255, 187, 0);
+            border-radius: 10px;
+            padding: 10px 5px;
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+        }
+        .input{
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            gap: 20px;
+        }
+        .input button{
+            width: 100%;
+            align-self: flex-end;
+            padding: 10px ;
+            font-size: 1.1rem;
+            background-color: rgb(255, 187, 0);
+            border: none;
+            border-radius: 3px;
+            @media (width <= 40em) {
+               width: 100%; 
+            }
+        }
+        .label{
+            display: grid;
+            gap: 5px;
+        }
+        .input span{
+        @media (width <= 40em) {
+               font-size: 0.8rem;
+            }
+            
+        }
+        .footer{
+            display: grid;
+            justify-items: center;
+            margin-top: 20px;
+            gap: 10px;
+        }
+        .head h1{
+            @media (width <= 40em) {
+              font-size: 1.5rem;  
+              margin-left: -10px;
+              position: absolute;
+              width: 30%;
+            }
+            
+        }
+        .label:first-child{
+            @media (width <= 40em) {
+                margin-top: 25px;
+            }
+        }
+        .label select{
+            padding: 10px;
+            border-radius: 5px;
+            outline: none;
+        }
+        .img img{
+            width: 500px;
+            object-fit:fill;
+            height: 700px;
+            border-radius: 50px;
+            @media (width <= 60em) {
+                
+               width: 500px; 
+               height: 700px;
+               margin-top: 40px;
+            }
+
+        }
+        @media (width >= 70em) {
+            body{
+                overflow-x: hidden;
+                overflow-y: hidden;
+            }
+        @media (width <= 40em) {
+            .img img{
+             display: none;
+               width: 100%; 
+               height: 400px;
+            }
+                
+            }
+            @media (width <= 100em) {
+                .img img{
+                width: 400px;
+                height: 600px;
+                margin-left: -40px;
+                }
+            body{
+                overflow-x: hidden;
+            }
+            }
+
+        }
+        .show{
+            display: block;
+        }
+        .flow{
+            overflow-y: hidden;
+        }
+        .proccess{
+            display: flex;
+            align-self: flex-end;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .proccess span{
+            border: 2px solid black;
+            padding: 10px;
+            border-radius: 40%;
+            border-top: none;
+            border-bottom: none;
+            animation: animate 0.5s  infinite  ease;
+            display: none;
+        }
+        @keyframes animate {
+            to{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+    <div class="mainBody">
+        <div class="body">
+            <div class="head">
+                <h1>Sign In</h1>
+                <div class="sociallinks">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#7c3aed"><path d="M140-160q-24 0-42-18t-18-42v-520q0-24 18-42t42-18h434q-3 15-4 30t1 30H145l335 218 151-98q10 9 21 16.67 11 7.68 23 13.33L480-462 140-685v465h680v-360q16.79-4.78 31.4-13.39Q866-602 880-613v393q0 24-18 42t-42 18H140Zm0-580v520-520Zm619.88 90Q714-650 682-682.12q-32-32.12-32-78T682.12-838q32.12-32 78-32T838-837.88q32 32.12 32 78T837.88-682q-32.12 32-78 32Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#7c3aed"><path d="M838-79 710-207v103h-60v-206h206v60H752l128 128-42 43Zm-358-1q-83 0-156-31.5T197-197q-54-54-85.5-126.36T80-478q0-83.49 31.5-156.93Q143-708.36 197-762.68 251-817 324-848.5 397-880 480-880t156 31.5q73 31.5 127 85.82 54 54.32 85.5 127.75Q880-561.49 880-478q0 23-2 44.5t-7 43.5h-63q6-21.67 9-43.33 3-21.67 3-44.47 0-22.8-2.95-45.6-2.94-22.8-8.83-45.6H648q2 23 4 45.5t2 45q0 22.5-1.25 44.5T649-390h-61q3-22 4.5-44t1.5-44q0-22.75-1.5-45.5T588-569H373.42q-3.42 23-4.92 45.5t-1.5 45q0 22.5 1.5 44.5t4.5 44h197v60H384q14 53 34 104t62 86q23 0 45-2.5t45-7.5v60q-23 5-45 7.5T480-80ZM151.78-390H312q-2.5-22-3.75-44T307-478q0-22.75 1-45.5t3-45.5H151.71q-5.85 22.8-8.78 45.6-2.93 22.8-2.93 45.6t2.95 44.47q2.94 21.66 8.83 43.33ZM172-629h149.59q11.41-48 28.91-93.5T395-810q-71 24-129.5 69.5T172-629Zm222 478q-26-41-43.5-86T323-330H172q33 67 91 114t131 65Zm-10-478h193q-13-54-36-104t-61-89q-38 40-61 89.5T384-629Zm255.34 0H788q-35-66-93-112t-129-68q27 41 44.5 86.5t28.84 93.5Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#7c3aed"><path d="M496-489v-321q0-12.75 8.63-21.38Q513.25-840 526-840h284q12.75 0 21.38 8.62Q840-822.75 840-810v192q0 12.75-8.62 21.37Q822.75-588 810-588H600l-104 99Zm60-159h224v-132H556v132Zm0 0v-132 132Zm239 528q-116 0-236.5-56T335-335Q232-438 176-558.5T120-795q0-19.29 12.86-32.14Q145.71-840 165-840h140q14 0 24 10t14 25l26.93 125.64Q372-665 369.5-653.5t-10.73 19.73L259-533q26 44 55 82t64 72q37 38 78 69.5t86 55.5l95-98q10-11 23.15-15 13.15-4 25.85-2l119 26q15 4 25 16.04 10 12.05 10 26.96v135q0 19.29-12.86 32.14Q814.29-120 795-120ZM229-588l81-82-23-110H180q2 42 13.5 88.5T229-588Zm369 363q41 19 89 31t93 14v-107l-103-21-79 83ZM229-588Zm369 363Z"/></svg>
+                </div>
+            </div>
+            <div class="input">
+                <div class="label">
+                    <label for="">School</label>
+                <select name="" id="">
+                    <i><option value="">Watchman Int'l College</option></i>
+                </select>
+                </div>
+                <div class="label">
+                    <label for="">Branch</label>
+                <select name="" id="" aria-placeholder="Branch" class="branch">
+                    <option >Rukuba Road</option>
+                    <option >Busa Buji</option>
+                </select>
+                </div>
+                <div class="proccess">
+                    <button class="btn">Login</button>
+                    <span class="nav"></span>
+                </div>
+                
+
+                
+                <span> Proccess Your student Results Smartly, Eliminate Stress In Result Proccessing.. <a href="">Sign Up Now</a></span>
+            </div>
+        <div class="footer">
+            <a href=""><span>Averix is powered by E-Tech Softwares</span></a>
+        
+        <span>Contact us on</span>
+        <div class="footerSocialLinks">
+                   <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#7c3aed"><path d="M140-160q-24 0-42-18t-18-42v-520q0-24 18-42t42-18h434q-3 15-4 30t1 30H145l335 218 151-98q10 9 21 16.67 11 7.68 23 13.33L480-462 140-685v465h680v-360q16.79-4.78 31.4-13.39Q866-602 880-613v393q0 24-18 42t-42 18H140Zm0-580v520-520Zm619.88 90Q714-650 682-682.12q-32-32.12-32-78T682.12-838q32.12-32 78-32T838-837.88q32 32.12 32 78T837.88-682q-32.12 32-78 32Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#7c3aed"><path d="M838-79 710-207v103h-60v-206h206v60H752l128 128-42 43Zm-358-1q-83 0-156-31.5T197-197q-54-54-85.5-126.36T80-478q0-83.49 31.5-156.93Q143-708.36 197-762.68 251-817 324-848.5 397-880 480-880t156 31.5q73 31.5 127 85.82 54 54.32 85.5 127.75Q880-561.49 880-478q0 23-2 44.5t-7 43.5h-63q6-21.67 9-43.33 3-21.67 3-44.47 0-22.8-2.95-45.6-2.94-22.8-8.83-45.6H648q2 23 4 45.5t2 45q0 22.5-1.25 44.5T649-390h-61q3-22 4.5-44t1.5-44q0-22.75-1.5-45.5T588-569H373.42q-3.42 23-4.92 45.5t-1.5 45q0 22.5 1.5 44.5t4.5 44h197v60H384q14 53 34 104t62 86q23 0 45-2.5t45-7.5v60q-23 5-45 7.5T480-80ZM151.78-390H312q-2.5-22-3.75-44T307-478q0-22.75 1-45.5t3-45.5H151.71q-5.85 22.8-8.78 45.6-2.93 22.8-2.93 45.6t2.95 44.47q2.94 21.66 8.83 43.33ZM172-629h149.59q11.41-48 28.91-93.5T395-810q-71 24-129.5 69.5T172-629Zm222 478q-26-41-43.5-86T323-330H172q33 67 91 114t131 65Zm-10-478h193q-13-54-36-104t-61-89q-38 40-61 89.5T384-629Zm255.34 0H788q-35-66-93-112t-129-68q27 41 44.5 86.5t28.84 93.5Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#7c3aed"><path d="M496-489v-321q0-12.75 8.63-21.38Q513.25-840 526-840h284q12.75 0 21.38 8.62Q840-822.75 840-810v192q0 12.75-8.62 21.37Q822.75-588 810-588H600l-104 99Zm60-159h224v-132H556v132Zm0 0v-132 132Zm239 528q-116 0-236.5-56T335-335Q232-438 176-558.5T120-795q0-19.29 12.86-32.14Q145.71-840 165-840h140q14 0 24 10t14 25l26.93 125.64Q372-665 369.5-653.5t-10.73 19.73L259-533q26 44 55 82t64 72q37 38 78 69.5t86 55.5l95-98q10-11 23.15-15 13.15-4 25.85-2l119 26q15 4 25 16.04 10 12.05 10 26.96v135q0 19.29-12.86 32.14Q814.29-120 795-120ZM229-588l81-82-23-110H180q2 42 13.5 88.5T229-588Zm369 363q41 19 89 31t93 14v-107l-103-21-79 83ZM229-588Zm369 363Z"/></svg>
+                </div>
+       </div>
+        </div>
+
+        <div class="img">
+            <img src="./happy-student-holding-books.jpg" alt="">
+        </div>
+    </div>
+    <script>
+        var branch = document.querySelector(".branch");
+        var btn = document.querySelector(".btn");
+        var popUp = document.querySelector(".nav")
+        var body = document.querySelector("body")
+        btn.addEventListener("click",()=>{
+            var branchValue = branch.value;
+            popUp.style.display = "block"
+            // Busa Buji Branch Nav
+            if(branchValue == "Busa Buji"){
+                //alert("Navigating to " + branchValue + " Branch...")
+            }
+             // Rukuba Road Branch Nav
+            if(branchValue == "Rukuba Road"){
+               // alert("Navigating to " + branchValue + " Branch...")
+            }
+        })
+        </script>
+</body>
+</html>
