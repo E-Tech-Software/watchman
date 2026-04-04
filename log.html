@@ -255,6 +255,13 @@
         </div>
     </div>
     <script>
+    let activity = "null"
+    document.addEventListener("DOMContentLoaded",()=>{
+        if(activity === "suspended"){
+            window.location.href = "suspend.html"
+            return
+        }
+    })
         var branch = document.querySelector(".branch");
         var btn = document.querySelector(".btn");
         var popUp = document.querySelector(".nav")
